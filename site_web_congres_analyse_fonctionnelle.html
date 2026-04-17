@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moroccan Workshop on Functional Analysis</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-green-800 text-white p-6">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-3xl font-bold">Moroccan Workshop on Functional Analysis</h1>
+    <p class="mt-2">Fez, Morocco | June 2026</p>
+  </div>
+</header>
+
+<!-- Language Switch -->
+<section class="text-center mt-4">
+  <button onclick="setLang('en')" class="mx-2 px-4 py-2 bg-blue-600 text-white rounded">English</button>
+  <button onclick="setLang('fr')" class="mx-2 px-4 py-2 bg-red-600 text-white rounded">Français</button>
+</section>
+
+<!-- About -->
+<section class="max-w-6xl mx-auto p-6">
+  <h2 class="text-2xl font-semibold mb-4">About / À propos</h2>
+  <p id="about-en">
+    This workshop brings together researchers and PhD students in functional analysis, operator theory, and related fields, with a focus on African-European collaboration.
+  </p>
+  <p id="about-fr" class="hidden">
+    Cet atelier réunit chercheurs et doctorants en analyse fonctionnelle et théorie des opérateurs, avec un accent sur la collaboration Afrique-Europe.
+  </p>
+</section>
+
+<!-- Topics -->
+<section class="bg-white p-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold mb-4">Topics</h2>
+    <ul class="list-disc ml-6">
+      <li>C*-algebras</li>
+      <li>Spectral theory</li>
+      <li>Banach spaces</li>
+      <li>Operator theory</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Speakers -->
+<section class="max-w-6xl mx-auto p-6">
+  <h2 class="text-2xl font-semibold mb-4">Invited Speakers</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="font-bold">George Skandalis</h3>
+      <p>Université Paris</p>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="font-bold">Jean Renault</h3>
+      <p>Université d'Orléans</p>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h3 class="font-bold">Ali Baklouti</h3>
+      <p>Université de Sfax</p>
+    </div>
+  </div>
+</section>
+
+<!-- Program -->
+<section class="bg-white p-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold mb-4">Program</h2>
+    <ul class="list-disc ml-6">
+      <li>Day 1: Plenary talks + short communications</li>
+      <li>Day 2: Mini-course + PhD sessions</li>
+      <li>Day 3: Discussions and collaborations</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Call for Papers -->
+<section class="max-w-6xl mx-auto p-6">
+  <h2 class="text-2xl font-semibold mb-4">Call for Papers</h2>
+  <p>
+    Submit your abstract (1 page) before <strong>March 30, 2026</strong>.
+  </p>
+</section>
+
+<!-- Registration Form -->
+<section class="bg-white p-6">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl font-semibold mb-4">Registration</h2>
+    <form class="space-y-4">
+      <input type="text" placeholder="Full Name" class="w-full p-2 border rounded">
+      <input type="email" placeholder="Email" class="w-full p-2 border rounded">
+      <input type="text" placeholder="Affiliation" class="w-full p-2 border rounded">
+      <textarea placeholder="Title of your talk" class="w-full p-2 border rounded"></textarea>
+      <button class="bg-green-700 text-white px-4 py-2 rounded">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="max-w-6xl mx-auto p-6">
+  <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+  <p>Email: workshop.fes2026@gmail.com</p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-green-800 text-white p-4 text-center">
+  <p>© 2026 Moroccan Workshop on Functional Analysis</p>
+</footer>
+
+<!-- Script -->
+<script>
+function setLang(lang) {
+  document.getElementById('about-en').classList.toggle('hidden', lang !== 'en');
+  document.getElementById('about-fr').classList.toggle('hidden', lang !== 'fr');
+}
+</script>
+
+</body>
+</html>
